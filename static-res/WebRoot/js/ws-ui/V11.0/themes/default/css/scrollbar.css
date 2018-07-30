@@ -1,0 +1,48 @@
+
+
+/********滚动条最外层*********/
+/**菜单滚动条**/
+#menuMain .mCustomScrollbar{padding-right:0 !important;}
+/**页面中无滚动条时**/
+.mCustomScrollbar.mCS_no_scrollbar{padding-right:10px !important;}
+/**页面中有滚动条时**/
+.mCustomScrollbar{padding-right:5px !important;}
+/**滚动条外层容器**/
+.mCSB_inside .mCSB_container{	
+	margin-right:10px;
+}
+/**滚动条宽度**/
+.mCSB_scrollTools{width:10px;}
+
+/**滚动条滑块**/
+.mCSB_scrollTools .mCSB_dragger{left: 0;}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #999 !important;
+    width:5px;
+    border-radius:3px;
+}
+/**滚动条最下方竖线**/
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: rgba(0,0,0,0.2);
+    filter: "alpha(opacity=20)";
+    -ms-filter: "alpha(opacity=20)";
+}
+.mCSB_scrollTools .mCSB_draggerContainer{
+    right: -5px;
+}
+
+
+/**首页左侧滚动条设置**/
+#ctrlTools .mCustomScrollbar{padding-right:0 !important;}
+#ctrlTools .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	width: 3px;
+  	background: #2850a7 !important;;
+}
+#ctrlTools .mCSB_scrollTools .mCSB_draggerRail {
+    background: rgba(255,255,255,.6);
+    filter: "alpha(opacity=60)";
+    -ms-filter: "alpha(opacity=60)";
+    width: 1px;
+}
+#ctrlTools .mCSB_scrollTools .mCSB_dragger{	left: 0;}
+#ctrlTools .mCSB_scrollTools .mCSB_draggerContainer{right:0;}

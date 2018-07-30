@@ -1,0 +1,23 @@
+
+.wrap{border-top: 1px solid #196fbd;}
+#ws_easyui_layout2{	
+	padding: 0 !important; 
+	padding-right: 0 !important;
+	width:100% !important;
+    height: 100% !important;
+}
+.layout-split-west{border-right:none;}
+
+
+#ctrlTools .mCustomScrollBox {
+    height:100% !important;
+}
+/***左侧二级菜单滚动条****/
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #bec8e0 !important;
+    width: 3px;
+}
+/***左侧树型菜单滚动条位置****/
+.menuRight-box .mCustomScrollbar {padding-right:0 !important;}
+.menuRight-box .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {background: #4f576b !important;}
+.menuRight-box .mCSB_scrollTools .mCSB_draggerRail{background: #d9d9d9 !important;}

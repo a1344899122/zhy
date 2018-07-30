@@ -1,0 +1,157 @@
+/***头部菜单整体***/
+.wrap .layout-split-north{border-bottom:none;}
+.wrap .layout-split-north .panel-body{overflow:hidden;}
+
+.navigation{
+	height: 45px;
+	background: #15acdc !important;
+	border-bottom: 1px solid #15acdc !important;
+    box-sizing: border-box;
+}
+.navigation ul li{
+	float: left;
+	line-height: 43px;
+	color: #e4edfc;  /****|的颜色****/
+}
+/****字体的颜色****/
+.navigation ul li a{color: #f1fcff;}
+
+.navigation ul li a:hover{text-decoration: underline;}
+/***头部左侧部分***/
+.navigation .top-left{margin-left: 20px;}
+.navigation .top-left li a{
+	padding: 0 15px;
+	font-size: 16px;
+	/*font-weight: 600;*/
+}
+/***头部右侧部分***/
+.navigation .top-right{float: right;}
+.navigation .top-right li a{
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+/*****下拉菜单******/
+/*****easu ui下拉菜单样式重置*******/
+.menu-line{display:none;}
+.navigation a.easyui-menubutton.l-btn.l-btn-plain{
+    height: 43px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border:none;
+}
+.navigation a.easyui-menubutton.m-btn-plain-active,
+.navigation a.easyui-menubutton.l-btn-plain:hover,
+.navigation a.easyui-menubutton.l-btn:hover,
+.navigation a.easyui-menubutton.l-btn-plain:focus,
+.navigation a.easyui-menubutton.l-btn:focus{
+	background:#14a5d3;
+}
+/*****下拉按钮*******/
+.dropdown a .dropdown-text{
+	color: #f1fcff;
+	/* font-size: 17px; */
+}
+/*****下拉列表*******/
+.dropdown-menu{
+	border:1px solid #d7ebfe;
+	border-top:none;
+	background:#fff;
+}
+.dropdown-menu li a{
+	line-height: 30px !important;
+    padding: 0 10px;
+    color:#666;
+}
+.dropdown-menu li{display:block;}
+/**下拉列表选种样式**/
+.dropdown-menu li:hover,.dropdown-menu li:focus{background:#f1fcff;}
+.dropdown-menu li:hover a,.dropdown-menu li:focus a{color: #15acdc;}
+/**三角**/
+/**三角隐藏easy ui的样式**/
+.m-btn-downarrow, .s-btn-downarrow{background:none;margin-top: -12px;}
+/**三角重置样式**/
+.m-btn-downarrow:before, .s-btn-downarrow:before{
+     content: "\f0dd";
+     font: normal normal normal 14px/1 FontAwesome;
+     color: #f1fcff;
+}
+/*****皮肤下拉菜单*****/
+.dropdown-menu-skin{min-width: 80px !important;}
+.dropdown-menu-skin li {text-align: center;}
+
+/***消息中心***/
+.circle{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: inline-block;
+	color: #fff;
+	right: 15px;
+    top: 13px;
+    line-height: 16px;
+    text-align: center;
+    background: #ffac26;
+}
+/*********全文检索 start **********/
+.index-searchBox{ 
+	position: relative;
+	margin-right:20px;
+}
+.index-searchBox input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #c8e6ef; 
+} 
+.index-searchBox input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #c8e6ef; 
+} 
+.index-searchBox input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #c8e6ef; 
+} 
+.index-searchBox input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #c8e6ef; 
+} 
+.index-searchBox input{
+    width:190px;
+    height: 26px;
+    padding-left: 10px;
+    border:1px solid #0aa0d0;
+    border-radius: 13px;
+    outline: none;
+    background: #0496c4;
+    color: #f1fcff;
+}
+.index-searchBox button[type="submit"]{
+    position: absolute;
+    top: 8px;
+    right: 2px;
+    width: 26px;
+    height: 26px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.index-searchBox button[type="submit"]:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #def0f5;
+}
+/*********全文检索 end **********/
+
+
+/**面包屑导航**/
+.breadcrumb{
+	height: 38px;
+	line-height: 36px;
+	background: #fefefe;
+	border-bottom:1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+.breadcrumb .fa{margin:0 5px 0 10px;}
+/**右侧登录时间**/
+.breadcrumb .login-time{
+	float: right;
+	color: #999;
+	margin-right: 10px;
+}
+

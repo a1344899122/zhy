@@ -1,0 +1,271 @@
+
+
+/****logo部分*****/
+.logo-box a{
+    width: 100%;
+    height: 45px;
+    display: block;
+    color: #f1fcff;
+    font-size: 20px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    padding-left: 35px;
+    background: url(../images/logo.png) 8px 10px no-repeat #14a5d3;
+    border-bottom: 1px solid #14a5d3;
+    border-right: 1px solid #1ca5d0;
+}
+.personal-center{display:none;}
+/************滚动条***************/
+#menuMain .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color:#f1f5ff !important;
+    width: 3px;
+}
+/****左侧菜单*****/
+.menu-main{
+	width:100%;
+    box-sizing: border-box;
+    border-right: 1px solid #d9d9d9;
+    background: #4f576b !important;
+}
+.menu-main ul li a:hover{background: #5c6478;}
+.menu-main ul li a.active{
+	color: #fff;
+	background: #15acdc;
+}
+.menu-main ul li a.active:hover{background:#15acdc;}
+.menu-main ul li.erji-list a:hover {background: #5c6478 !important;}
+.menu-main ul li.erji-list a.active:hover{background:#15acdc !important;}
+.menu-main ul li.erji-list a{cursor: pointer !important;}
+.menu-main .l-btn-left,
+.menu-main .l-btn-left span.l-btn-text{
+	width: 100% !important;
+    height: 100% !important;
+    color: #bec8e0;
+    text-align: left;
+    margin: 0 !important;
+    font-size: 13px;
+}
+.menu-main .l-btn-left span.m-btn-downarrow,.menu-main .l-btn-left span.m-btn-line{
+	display:none;
+}
+.l-btn-plain:hover,.m-btn-plain-active,.l-btn,.l-btn:hover{
+	border:none;
+	border-radius:0;
+	-moz-border-radius:0;
+  	-webkit-border-radius:0;
+  	background:none;
+}
+/****一级菜单*****/
+.menu-yiji{margin-top:10px;}
+.menu-yiji .yiji-list a{
+    color: #bec8e0;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+}
+/****一级菜单 左侧图标 *****/
+.menu-yiji .yiji-list a .icon{
+    color: #bec8e0;
+    font-size: 15px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+.menu-yiji .yiji-list.jiankong a .icon{
+    background:url(../images/jiankong.png) left top no-repeat;
+}
+.menu-yiji .yiji-list.jiankong a.active .icon{
+    background-position-x:-16px;
+}
+/****二级菜单 *****/
+.menu-erji{
+	display:none;
+	background: #474f64;
+	padding:5px 0;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+.menu-erji .erji-list a{
+    font-size: 14px;
+    padding: 8px 10px;
+    display: block;
+    padding-left:28px;
+}
+.menu-main .erji-list a.easyui-menubutton.l-btn.l-btn-plain{
+	padding:6px 10px 5px 28px;
+    height: auto !important;
+}
+.menu-erji .erji-list a.on{color:#fff;}
+.menu-erji .erji-list a.active{
+	color: #fff;
+	background: #15acdc;
+}
+.menu-erji .erji-list a.active *{
+	color: #fff;
+}
+/****二级菜单 左侧图标 *****/
+.menu-erji .erji-list a span{
+    width: 16px;
+    height: 16px;
+    margin-right:2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-erji .erji-list a .sanjiao-icon{
+    background:url(../images/sanjiao.png) left top no-repeat;
+}
+.menu-erji .erji-list a.on .sanjiao-icon{
+    background-position-x:-16px;
+}
+/****三级菜单 *****/
+.menu-sanji{
+    display: none;
+}
+.menu-sanji .sanji-list a{
+    font-size: 13px;
+    padding: 6px 10px 6px 66px;
+    display: block;
+}
+.menu-main .sanji-list a.easyui-menubutton.l-btn.l-btn-plain{
+    padding: 3px 10px 2px 66px;
+    height: auto !important;
+}
+/*****弹框的菜单右侧图标******/
+.menu-erji .erji-list a i.fa-ellipsis-h,
+.menu-sanji .sanji-list a i.fa-ellipsis-h{
+	color:#bec8e0;
+	margin-top:5px;
+}
+.menu-erji .erji-list a.active i.fa-angle-right,
+.menu-sanji .sanji-list a.active i.fa-angle-right{
+	color:#fff;
+	margin-top:5px;
+}
+
+/*************右侧弹出菜单***************/
+.menu-shadow{box-shadow: 2px 2px 3px #e5e5e5;}
+.menu-dialog{
+	height:calc(100vh - 46px) !important;
+	padding:0;
+	border:none;
+	border-right:1px solid #d9d9d9;
+	background:#f3f5fa;
+	min-width:170px !important;
+    left: 190px !important;
+    top: 46px !important;
+}
+.menu-dialog .title{
+	padding:10px 15px;
+	padding-top: 20px;
+	color:#20283d;
+	font-size:16px;
+	background:#e7edf6;
+	margin-bottom:6px;
+}
+
+/****弹出一级菜单 *****/
+.menuDialog-yiji .yiji-list a{
+	padding:8px 10px;
+	padding-left:12px;
+	color:#20283d;
+	font-size:13px;
+    display: block;
+    padding-left:12px;
+}
+/****弹出一级菜单 左侧图标 *****/
+.menuDialog-yiji li a:hover{background:#e7edf6;}
+.menuDialog-yiji li a.active{background:#fff;color: #15acdc;}
+.menuDialog-yiji .yiji-list a span{
+    width: 16px;
+    height: 16px;
+    margin-right:2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menuDialog-yiji .yiji-list a .sanjiao-icon{
+    background:url(../images/sanjiao.png) left -16px no-repeat;
+}
+.menuDialog-yiji .yiji-list a .sanjiao-icon.on{
+    background-position-x:-16px;
+}
+/****弹出二级菜单 *****/
+.menuDialog-erji{display:none;}
+.menuDialog-erji .erji-list a{
+	padding:6px 10px;
+	color:#6c748d;
+	padding-left:48px;
+}
+
+
+
+/********皮肤按钮********/
+.layout-split-south .panel-body{border-right:1px solid #d9d9d9;}
+.skin-btn{
+	position:absolute;
+    left: 24px;
+    bottom: 10px;
+	z-index:10;
+}
+.skin-btn input[type="button"]{
+    cursor: pointer;
+    background: #525B6F;
+    color: #A7AFC0;
+    border: 1px solid #737B8F;
+    padding: 2px 7px 4px 7px;
+    height: auto !important;
+    float:left;
+}
+.skin-btn input[type="button"]:first-child{
+	border-radius:4px 0 0 4px;
+	border-right:none;
+}
+.skin-btn input[type="button"]:last-child{
+	border-radius:0 4px 4px 0;
+	border-left:none;
+}
+
+/****树展开*****/
+.ztree{
+    padding-left: 5px;
+    padding-right: 0;
+}
+.ztree li span{color:#4f576b;}
+/***选中的效果****/
+/* .ztree li a.curSelectedNode{
+	border:none;
+	background-color:#525B6F;
+} */
+.menu-title{
+    padding: 8px 0;
+    border-bottom: 1px solid #d9d9d9;
+    margin:5px 10px;
+    color: #4f576b;
+    font-size: 16px;
+    font-weight: normal;
+}
+.menu-title i{
+	color:#14a5d3;
+	margin-right:5px;
+}
+/* .ztree li a.curSelectedNode span{
+   	color: #15ACDC;
+    text-decoration: underline;
+} */
+/*root*/
+.ztree li span.button.diyRoot_ico_open, .ztree li span.button.diyRoot_ico_close{margin-right:2px; background: url(../images/root.png) no-repeat}
+/*文件*/
+.ztree li span.button.diyFile_ico_open{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+.ztree li span.button.diyFile_ico_close{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+.ztree li span.button.diyFile_ico_docu{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+/*审核*/
+.ztree li span.button.diyAudit_ico_open{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+.ztree li span.button.diyAudit_ico_close{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+.ztree li span.button.diyAudit_ico_docu{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+
+.ztree li span.button.diy01_ico_open{margin-right:2px; background-position:-110px -16px; vertical-align:top;background:url(../images/file_open1.png) no-repeat; *vertical-align:middle}
+.ztree li span.button.diy01_ico_close{margin-right:2px; background-position:-110px 0; vertical-align:top;background:url(../images/file_close1.png) no-repeat; *vertical-align:middle}
+
+.ztree li span.button.diy01_ico_docu{margin-right:2px; background: url(../images/leaf1.png) no-repeat}

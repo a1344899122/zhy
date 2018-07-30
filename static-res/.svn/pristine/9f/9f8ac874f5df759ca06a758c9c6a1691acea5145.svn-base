@@ -1,0 +1,122 @@
+
+/*********弹出框头部***********/
+.modal-header{
+	background: #317bde;
+	height: 43px !important;
+	box-sizing: border-box;
+	line-height: 40px;
+	padding: 0 12px;
+    border-bottom: none;
+}
+/***弹出框头部左侧标题***/
+.modal-title{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+/***弹出框头部右侧按钮***/
+/* .modal-header button{
+	width: 14px;
+	height: 14px;
+	border: none;
+	float: right;
+}
+.modal-header button + button{
+	margin-right: 10px;
+}
+.modal-header .close{
+	background: url(../images/window-close.png) center center no-repeat;
+    margin-top: 11px;
+}
+.modal-header .btn-max{
+	background: url(../images/window-max.png) center center no-repeat;
+    margin-top: 11px;
+}
+.modal-header .btn-min{
+	background: url(../images/window-min.png) center center no-repeat;
+    margin-top: 11px;
+} */
+.modal-headerD *{
+	color:#fff;
+}
+
+
+
+/***弹出框内容部分***/
+.modal-dialog{
+	width:100%;
+	min-height:100%;
+	margin: 0px;
+    overflow: hidden;
+    /* padding-top: 60px; */
+}
+.modal-body{
+	padding: 0;
+	background: #fefefe;
+    /* padding-bottom: 6px; */
+}
+
+
+/***弹出框底部按钮***/
+.modal-footer{
+	height:55px;
+	padding-top:10px;
+	background-color:#f2f2f2;
+	border-top:1px solid #ccc;
+	margin-top: 0px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+.modal-body #ws_easyui_layout{
+	padding: 0;
+    overflow: hidden;
+    zoom: 1;
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 1100px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-sm {
+    width: 400px;
+  }
+}
+
+/********正在加载中**********/
+.loading p {  
+    display: block;  
+    width: 170px;  
+    height: 44px;  
+    line-height: 38px;
+    background: #fefefe;
+    border:1px solid #ccc;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #555;
+    top: 50%;  
+    left: 50%;  
+    margin-left: -85px;  
+    margin-top: -22px;  
+    position: fixed;  
+    z-index: 2001; 
+    box-sizing: border-box; 
+    padding-left: 10px;
+}  
+.loading p i{vertical-align: middle;} 
+/* 半透明的遮罩层 */
+.overlay {
+    background: rgba(0,0,0,.4);
+    filter: alpha(opacity=50); /* IE的透明度 */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100; /* 此处的图层要大于页面 */
+}

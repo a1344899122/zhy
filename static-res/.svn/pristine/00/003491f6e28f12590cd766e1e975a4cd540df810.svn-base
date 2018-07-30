@@ -1,0 +1,200 @@
+
+
+/****左侧菜单*****/
+.sidebar{
+	width:180px;
+	/*height: 100%;*/
+	border:none;
+	/* border-right: 1px solid #c6d3e9 !important; */
+}
+/***左侧整体背景颜色****/
+/* .sidebar,.sidebar .panel-body{background: #4f576b !important;} */
+
+
+/****个人中心*****/
+.personal-center{
+	width:100%;
+	height: 130px;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 15px;
+	background: url(../images/line.png) center bottom no-repeat #4f576b;
+    border-right: 1px solid #d9d9d9;
+}
+.personal-center .img-box{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #4F576B;
+	margin-left: 65px;
+	margin-bottom: 10px;
+}
+.img-box img{margin-top: 2px;}
+.personal-center a{color: #bec8e0;}
+.personal-center a:hover{ text-decoration: underline;}
+
+/****左侧菜单*****/
+/****一级菜单*****/
+.menuMain-box{
+	width:180px;
+    box-sizing: border-box;
+    float: left;
+}
+.menu-main{
+    border-right: 1px solid #d9d9d9;
+    width:100%;
+    box-sizing: border-box;
+    background: #4f576b !important;
+    padding-bottom: 50px;
+}
+.menu-main .list-menu{
+	padding:6px 10px 8px 30px;
+	color: #bec8e0;
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+}
+.menu-main .list-menu:first-child{
+	margin-top:5px;
+}
+/****一级菜单左侧图标*****/
+.menu-main .list-menu .icon{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: absolute;
+	left:10px;
+	top: 10px;
+	background: url(../images/icon.png) -16px top no-repeat;
+}
+.menu-main .list-system .icon{background-position:-16px -16px;}
+.menu-main .list-monitor .icon{background-position:-16px -32px;}
+/****一级菜单右侧箭头*****/
+.menu-main .right-icon{float: right;}
+.menu-main .right-icon *{color:#bec8e0;}
+/****一级菜单悬浮效果*****/
+.menu-main .list-menu:hover{
+	/* background: #2850a7; */
+	color:#fff;
+}
+.menu-main .list-menu:hover *{
+	color:#fff;
+}
+.menu-main .list-menu:hover .icon{background-position-x:0;}
+/****一级菜单选中效果*****/
+.menu-main .list-menu.open{
+	/* background: #3367d5; */
+	color: #fff;
+	/* border-bottom: 1px solid #d7ebfe; */
+}
+.menu-main .list-menu.open .icon{background-position-x:0;}
+.menu-main .list-menu.open .right-icon i{
+	color: #fff !important;
+	transform:rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg); 
+	-o-transform: rotate(90deg);
+}
+
+
+/******二级菜单*******/
+.menu-element{
+	overflow:hidden;
+	padding:5px 0;
+	background: #525b6f;
+	display:none;
+}
+.menu-element li a{
+	padding: 6px 5px 6px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    color: #bec8e0;
+    font-size: 13px;
+    padding-left: 30px;
+}
+.menu-element li:hover a,
+.menu-element li:focus a{
+    color: #fff;
+}
+.menu-element li.on a{
+    color: #15acdc;
+}
+
+
+.menuRight-box{
+	width:170px;
+	background:#eaecf6;
+    float: right;
+    border-right:1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+/********皮肤按钮********/
+.layout-split-south .panel-body{border-right:1px solid #d9d9d9;}
+.skin-btn{
+	position:absolute;
+    left: 24px;
+    bottom: 10px;
+	z-index:10;
+}
+.skin-btn input[type="button"]{
+    cursor: pointer;
+    background: #525B6F;
+    color: #A7AFC0;
+    border: 1px solid #737B8F;
+    padding: 2px 7px 4px 7px;
+    height: auto !important;
+    float:left;
+}
+.skin-btn input[type="button"]:first-child{
+	border-radius:4px 0 0 4px;
+	border-right:none;
+}
+.skin-btn input[type="button"]:last-child{
+	border-radius:0 4px 4px 0;
+	border-left:none;
+}
+
+/****树展开*****/
+.ztree{
+    padding-left: 5px;
+    padding-right: 0;
+}
+.ztree li span{color:#4f576b;}
+/***选中的效果****/
+/* .ztree li a.curSelectedNode{
+	border:none;
+	background-color:#525B6F;
+} */
+.menu-title{
+    padding: 8px 0;
+    border-bottom: 1px solid #d9d9d9;
+    margin:5px 10px;
+    color: #4f576b;
+    font-size: 16px;
+    font-weight: normal;
+}
+.menu-title i{
+	color:#14a5d3;
+	margin-right:5px;
+}
+/* .ztree li a.curSelectedNode span{
+   	color: #15ACDC;
+    text-decoration: underline;
+} */
+/*root*/
+.ztree li span.button.diyRoot_ico_open, .ztree li span.button.diyRoot_ico_close{margin-right:2px; background: url(../images/root.png) no-repeat}
+/*文件*/
+.ztree li span.button.diyFile_ico_open{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+.ztree li span.button.diyFile_ico_close{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+.ztree li span.button.diyFile_ico_docu{margin-right:2px; background: url(../images/leaf1.png) no-repeat}
+/*审核*/
+.ztree li span.button.diyAudit_ico_open{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+.ztree li span.button.diyAudit_ico_close{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+.ztree li span.button.diyAudit_ico_docu{margin-right:2px; background: url(../images/aduit1.png) no-repeat}
+
+.ztree li span.button.diy01_ico_open{margin-right:2px; background-position:-110px -16px; vertical-align:top;background:url(../images/file_open1.png) no-repeat; *vertical-align:middle}
+.ztree li span.button.diy01_ico_close{margin-right:2px; background-position:-110px 0; vertical-align:top;background:url(../images/file_close1.png) no-repeat; *vertical-align:middle}
+
+.ztree li span.button.diy01_ico_docu{margin-right:2px; background: url(../images/leaf1.png) no-repeat}

@@ -1,0 +1,121 @@
+@CHARSET "UTF-8";
+ table td{
+  padding:2px !important;
+  height:33px !important;
+  vertical-align: middle  !important;
+}
+
+.searchTable{
+	width:100%;
+	margin-bottom:2px;
+	overflow-y:hidden;
+	overflow-x:auto;
+	border:1px solid #D6D6D6;
+	padding:5px;
+}
+
+.searchTable table{
+	margin-bottom:0px !important;
+}
+.searchTable table td{
+	border:0px !important;
+	vertical-align: middle !important;
+}
+.searchTable .rc-handle-container{
+	width:100% !important;
+}
+
+.searchTable .moreSeachField{
+	display:none;
+}
+
+
+.fixed-table-toolbar {
+	margin:0px !important;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-width: 0px;
+ 		 }
+ 		 
+.fixed-table-container{
+	padding-bottom: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-radius: 0px !important;
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+}
+
+.fixed-table-container thead{
+   color: #fff;
+   background-color: #395A9D !important;	
+   border-width:1px !important;
+   border-style:solid !important;
+}
+.fixed-table-container thead>tr>th{
+   font-weight: bold !important;
+   text-align: center !important;
+   border-width: 1px !important;
+   border-style: solid !important;
+   border-top-color: #395A9D !important;
+   border-bottom-color: #395A9D !important;
+}
+ 
+.fixed-table-container thead th:first-child{
+   border-left-color:#395A9D !important;
+   border-top-left-radius:0px !important;
+}
+
+.fixed-table-container thead th:last-child{
+   border-right-color:#395A9D !important;
+}
+
+.fixed-table-container tbody{
+   border-right-width:1px !important;
+   border-right-color:#d9d9d9 !important;
+   border-right-style:solid !important;
+   border-left-width:1px !important;
+   border-left-color:#d9d9d9 !important;
+   border-left-style:solid !important;
+}
+
+.fixed-table-container thead th .th-inner, 
+.fixed-table-container tbody td .th-inner{
+	line-height: 18px;
+	font-weight:bold !important;
+}
+
+.fixed-table-container a {
+	cursor: pointer;
+}
+
+.pagination>li>a,pagination>li>span{
+	color:#395A9D !important;
+}
+.pagination>.active>a, 
+.pagination>.active>span, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus {
+	background-color:#395A9D !important;
+	border-color:#395A9D !important;
+	color:#fff !important;
+} 
+
+.pagination>.disabled>a, 
+.pagination>.disabled>span, 
+.pagination>.disabled>a:hover, 
+.pagination>.disabled>span:hover, 
+.pagination>.disabled>a:focus, 
+.pagination>.disabled>span:focus {
+	color:#999 !important;
+}  
+
+/* 解决与bootstarp的样式冲突 */
+.fixed-table-container{
+	border: 0px !important;
+}
+		

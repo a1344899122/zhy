@@ -1,0 +1,57 @@
+
+
+/******外部左侧树形菜单样式****/
+.wsdf-wrap div#ctrlTools{
+	height:100%;
+	background: #f4f7fc;
+    overflow: auto;
+    padding-right:0 !important;
+}
+.wsdf-wrap #ctrlTools ul.ztree{
+	border-bottom:none;
+	background:none;
+}
+
+.sidebar{
+	border-right: 1px solid #c6d3e9 !important;
+}
+/****整体表单设计器*****/
+.designer-wrap{
+    height: 100% !important;
+    width: 100% !important;
+}
+.designer-wrap .layout-panel-center{border-top: 5px solid #f5f5f5;}
+/*******表单头部*******/
+.designer-wrap .panel-header{background: #f4f7fc;}
+.designer-wrap .layout-panel-north .panel-title:before{content: '\f0ad';}
+.designer-wrap .layout-panel-north{position:relative;}
+.designer-wrap .btn-right{
+	position:absolute;
+	bottom: 16px;
+	right:5px;
+}
+.designer-wrap .btn-right a{
+	color:#fff;
+	font-size:13px;
+	padding: 2px 10px 4px 10px;
+}
+.btn-tool{padding:10px 5px;}
+.btn-tool *{font-size:13px;background: #fafafa !important;}
+.btn-tool button + button {
+    margin-left: 2px;
+}
+
+
+.designer-wrap .layout-panel-center .panel-title:before{content: "\f0e4";}
+.edui-default .edui-editor{
+	border-radius:0 !important;
+}
+.edui-default .edui-editor-toolbarbox{
+	box-shadow:none !important;
+}
+.edui-default .edui-editor-toolbarboxouter{
+	border-radius:0 !important;
+	box-shadow:none !important;
+    background-color: #fafafa !important;
+    background-image: none !important;
+}

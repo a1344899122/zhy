@@ -1,0 +1,13 @@
+/*缺省*/
+/* .ztree li span.button.diy01_ico_open{margin-right:2px; background-position:-110px -16px; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.diy01_ico_close{margin-right:2px; background-position:-110px 0; vertical-align:top; *vertical-align:middle}
+.ztree li span.button.diy01_ico_docu{margin-right:2px; background: url(aduit.png) no-repeat}
+ */
+
+.ztree li span.button.diy01_ico_open{width:19px !important;margin-right:2px; /* background-position:-110px -16px; */ vertical-align:top; *vertical-align:middle;background-image:url(../img/Company.png)}
+.ztree li span.button.diy01_ico_close{width:19px !important;margin-right:2px;/*  background-position:-110px 0; */ vertical-align:top; *vertical-align:middle;background-image:url(../img/Company.png)}
+.ztree li span.button.diy01_ico_docu{margin-right:2px; /* background-position:-110px -32px;  */vertical-align:top; *vertical-align:middle;background-image:url(../img/Personal.png)}
+
+.ztree li span.button.diy02_ico_open{width:19px !important;margin-right:2px; /* background-position:-110px -16px; */ vertical-align:top; *vertical-align:middle;background-image:url(../img/Company.png)}
+.ztree li span.button.diy02_ico_close{width:19px !important;margin-right:2px;/*  background-position:-110px 0; */ vertical-align:top; *vertical-align:middle;background-image:url(../img/Company.png)}
+.ztree li span.button.diy02_ico_docu{width:19px !important;margin-right:2px;/* background-position:-110px -32px;  */vertical-align:top; *vertical-align:middle;background-image:url(../img/Company.png)}

@@ -1,0 +1,79 @@
+/***头部菜单整体***/
+.wrap .layout-split-north{border-bottom:none;}
+.wrap .layout-split-north .panel-body{overflow:hidden;}
+/****logo部分*****/
+.logo-box a{
+    width: 180px;
+    height: 46px;
+    display: block;
+    color: #dbf4fc;
+    font-size: 20px;
+    padding-top: 8px;
+    box-sizing: border-box;
+    padding-left: 35px;
+    background: url(../images/logo.png) 8px 10px no-repeat #14a5d3;
+    border-bottom: 1px solid #14a5d3;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.navigation{
+	height: 45px;
+	background: #15acdc !important;
+	border-bottom: 1px solid #15acdc !important;
+	padding-left:180px;
+    box-sizing: border-box;
+}
+.navigation ul li{
+	float: left;
+	line-height: 43px;
+	color: #e4edfc;  /****|的颜色****/
+}
+/****字体的颜色****/
+.navigation ul li a{color: #dbf4fc;}
+
+.navigation ul li a:hover{text-decoration: underline;}
+/***头部左侧部分***/
+.navigation .top-left{margin-left: 20px;}
+.navigation .top-left li a{
+	padding: 0 15px;
+	font-size: 16px;
+	/*font-weight: 600;*/
+}
+/***头部右侧部分***/
+.navigation .top-right{float: right;}
+.navigation .top-right li a{
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+/***消息中心***/
+.circle{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: inline-block;
+	color: #fff;
+	right: 15px;
+    top: 13px;
+    line-height: 16px;
+    text-align: center;
+    background: #ffac26;
+}
+
+/**面包屑导航**/
+.breadcrumb{
+	height: 32px;
+	line-height: 30px;
+	background: #fefefe;
+	border-bottom:1px solid #d9d9d9;
+    box-sizing: border-box;
+}
+.breadcrumb .fa{margin:0 5px 0 10px;}
+/**右侧登录时间**/
+.breadcrumb .login-time{
+	float: right;
+	color: #999;
+	margin-right: 10px;
+}
+

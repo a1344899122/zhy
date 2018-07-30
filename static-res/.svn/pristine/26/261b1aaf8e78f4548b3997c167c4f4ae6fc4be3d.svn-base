@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+ table td{
+  padding:2px !important;
+  height:40px !important;
+  vertical-align: middle  !important;
+}
+
+.searchTable{
+	width:100%;
+	margin-bottom:2px;
+	overflow-y:hidden;
+	overflow-x:auto;
+	border:0px;
+	padding:5px;
+}
+
+.searchTable table{
+	margin-bottom:0px !important;
+}
+.searchTable table td{
+	border:0px !important;
+	vertical-align: middle !important;
+}
+.searchTable .rc-handle-container{
+	width:100% !important;
+}
+
+.searchTable .moreSeachField{
+	display:none;
+}
+
+
+.fixed-table-toolbar {
+	margin:0px !important;
+    border: 1px solid #ccc; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-width: 0px;
+}
+ 		 
+.fixed-table-container{
+	border: 0px !important;
+	padding-bottom: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-radius: 0px !important;
+	-webkit-border-radius:0px !important;
+	-moz-border-radius:0px !important;
+}
+
+
+.fixed-table-container thead th{
+  	 border-top: 1px solid #dddddd !important;
+  	 background-color: #f5f5f5 !important;
+  	 height: 50px !important;
+  	 line-height: 50px !important;
+  	 vertical-align: middle !important;
+  	 text-align: center !important;
+}
+ .fixed-table-container thead th:first-child{
+ 	border-top-left-radius:0px !important;
+  	border-left: 1px solid #dddddd !important;
+}
+
+.fixed-table-container thead th:last-child{
+    border-right: 1px solid #dddddd;
+}
+ 
+.fixed-table-container tbody{
+    border-right-width:1px !important;
+   border-right-color:#d9d9d9 !important;
+   border-right-style:solid !important;
+   border-left-width:1px !important; 
+   border-left-color:#d9d9d9 !important;
+   border-left-style:solid !important;
+}
+
+.fixed-table-container thead th .th-inner, 
+.fixed-table-container tbody td .th-inner{
+	line-height: 16px;
+	font-weight:bold !important;
+}
+
+.fixed-table-container tbody tr td {
+    height:50px !important;
+    background-color: #fff !important;
+}
+
+.fixed-table-container a {
+	color: #2c63ff !important;
+	text-decoration: none !important;
+}
+
+.fixed-table-container a:hover, .fixed-table-container a:focus {
+	color: #2c63ff !important;
+	text-decoration: underline !important;
+}
+
+.fixed-table-container a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px
+} 
+
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th{
+	 background-color: #f5f5f5 !important;
+}
+
+
+
+
+.pagination>li>a,pagination>li>span{
+	color:#2c63ff !important;
+}
+
+.pagination>.active>a, 
+.pagination>.active>span, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus {
+	background-color:#2c63ff !important;
+	border-color:#2c63ff !important;
+	color:#fff !important;
+} 
+
+.pagination>.disabled>a, 
+.pagination>.disabled>span, 
+.pagination>.disabled>a:hover, 
+.pagination>.disabled>span:hover, 
+.pagination>.disabled>a:focus, 
+.pagination>.disabled>span:focus {
+	color:#999 !important;
+} 
+
+.dropdown-menu > li > a {
+	text-decoration: none !important;
+}
+.dropdown-menu > li > a:hover,dropdown-menu > li > a:focus{
+	text-decoration: underline !important;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{
+	background-color:#2c63ff !important;
+	color:#fff !important;
+	text-decoration: none !important;
+} 
+
+
+
+
+		

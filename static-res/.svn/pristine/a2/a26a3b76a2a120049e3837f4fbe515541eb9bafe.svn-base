@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<HTML>
+
+ <HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>demo</title>
+	<script type="text/javascript" src="../../net-js/jquery.min.1.11.1.js"></script>
+	
+	<script type="text/javascript" src="ws_jquery_ext_browser_version.js"></script>
+	<script type="text/javascript" src="ws_uploadFile_ie9.js"></script>
+	<script type="text/javascript" src="ws_uploadFile_html5.js"></script>
+	<script type="text/javascript" src="ws_uploadFile1.0.js"></script>
+
+	<script type="text/javascript">
+		var activiti_host="http://192.168.80.1:8080/workflow-rest";
+		function testUpload(){
+			ws.component.uploadFile({
+				 url:activiti_host+'/ws/runtime/multipartFileUpload.action', //必填，文件上传后台url。
+		         fileFieldName:'files',                  //选填，文件选择框的名称默认值：file。，与后台相关
+		         multiple:false,                        //选填，是否支持多文件上传，默认false，ie9不支持多文件上传。
+		         singleFileName:"",                    //选填，仅在单个文件上传时，可指定文件名称。与后台相关，后台要做处理，request.getParameter("singleFileName")，将文件存储为指定的名称,
+		         allowFileType:"doc|docx|xls|xlsx",    //选填，允许上传的文件类型，多个使用竖线分隔，默认不限制文件类型
+		        /*
+				 data:{//选填，文件上传时其他参数。后台要进行相应的处理
+		        	category_code:"aaaa"
+		        },*/                            
+		        success:function(jsonData){//仅支持json数据。与后台相关，多文件时，后台要组装成json数组字符串,
+		            if(jsonData.success){
+		            	/****前端负责消息的显示样式****/
+		            	alert("上传成功");
+		            	var files=jsonData.files;
+		            	$("#resultFile").empty();
+		            	for(var i=0;i<files.length;i++){
+							var fileName=files[i].fileName;
+							var fileType=files[i].fileType;
+							var fileSize=files[i].fileSize;
+							var tempUri=files[i].tempUri;
+							var host_addr=files[i].host_addr;
+							
+							$("#resultFile").append(fileName+"&nbsp;&nbsp;"+fileType+"&nbsp;&nbsp;"+fileSize+"&nbsp;&nbsp;"+tempUri+"&nbsp;&nbsp;"+host_addr+"<br>");
+		            	}
+		            }else{
+		              alert(jsonData.msg);
+		            }
+		        },error:function(statusCode,errorMessage){
+		        	/****前端负责错误消息的显示样式****/
+		        	switch(statusCode){
+		        	case -100:
+		        		alert(errorMessage);//请选择文件
+		        		break;
+		        	case -101:
+		        		alert(errorMessage);//文件类型不正确
+		        		break;
+		        	}
+		        }
+			});
+		}
+		
+	</script>
+</HEAD>
+
+ <BODY>
+    支持IE9及以上版本、火狐等浏览器。
+	<br><br>
+    <button  onClick="testUpload();">上传文件</button>
+    
+    <br><br>
+    <div id="resultFile"/>
+    
+	</BODY>
+</HTML>

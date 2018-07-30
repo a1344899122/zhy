@@ -1,0 +1,891 @@
+@CHARSET "UTF-8";
+*{
+	font-family:"Microsoft Yahei", Tahoma, Verdana, Arial, sans-serif;
+	font-size: 16px !important;
+	outline: none !important; 
+	font-weight: normal !important;
+}
+html{
+	width: 100%;
+}
+body{
+	overflow: hidden !important;
+	width: 100%;
+	/* height: 100%; */
+	float: left;
+}
+
+/* 页面容器 */
+.pageContainer{
+	padding:0px !important;
+	margin:0px !important;
+	width:100% !important;
+	/* height: 100% !important; */
+	overflow: hidden;
+}
+
+/* 页面导航  start****************************/
+.crumbs{
+	position: relative;
+    right: 0;
+    width: 100%;
+    z-index: 100
+}
+.crumbs .breadcrumb{
+	border-radius:0px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #ccc;
+	background:#fff;
+}
+.crumbs .breadcrumb> li > a,.crumbs .breadcrumb> li > .fa{
+	font-size:  14px !important;	
+}
+
+.crumbs .breadcrumb> li> .active {
+   	color: #666;
+   	text-decoration: none !important;
+   	cursor: context-menu;
+}
+.crumbs .breadcrumb>li+li:before{
+    content: ">\00a0";
+    color: #2c63ff;
+}
+.crumbs .breadcrumb .fa::before {
+    color: #2c63ff;
+}
+/* 页面导航  end****************************/
+
+/* 页面内容 */
+.mainContent{
+	width:100%;
+	/* height:100%; */
+	margin:0;
+	padding:10px;
+	overflow: auto !important;
+	background-color: #fff;
+}
+
+.pageTitle{
+	text-align:center;
+	border-top:1px #D6D6D6 solid;
+	border-left:1px #D6D6D6 solid;
+	border-right:1px #D6D6D6 solid;
+	background-color: #fff;
+	height: 45px;
+	line-height:45px;
+}
+
+.pageTitle span{
+	margin:0;
+	height:100%;
+	line-height:45px;
+	font-size:22px !important;
+	font-weight:600 !important;
+	color:#2c63ff;
+}
+
+
+/* 面板盒子 */
+.panelBox{
+	background-color: #fff;
+	width:100%;
+	border:1px solid #D6D6D6;
+	margin:0px 10px 25px 0;
+}
+/* 面板标题 */
+.panelTitle{
+	font-size:18px !important;
+	font-weight:600 !important;
+	text-align:left;
+	margin:10px 10px 0px 10px;
+	padding-bottom:5px;
+	border-bottom-width:1px;
+	border-bottom-color:#D6D6D6;
+	border-bottom-style:solid;
+	/* color:#2c63ff; */
+}
+/* 面板内容 */
+.panelContent{
+	width:100%;
+	padding:10px;
+	background-color: #fff;
+}
+
+/* 面板二级标题 */
+.secondTitle{
+	font-size:14px !important;
+	font-weight:600 !important;
+	text-align:left;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	border-bottom-width:1px;
+	border-bottom-color:#D6D6D6;
+	border-bottom-style:solid;
+	color:#2c63ff;
+}
+
+
+/* 编辑页面底部按钮组样式 start****************************/
+.footerButtonBox {
+	position: fixed;
+	bottom: 0;
+	z-index:1000;
+	background-color: #eee;
+	border-top: 1px solid #ccc;
+	width: 100%;
+	height: 55px;
+	text-align: center;
+	right:0 !important;
+}
+.footerButtonBox .buttonConent{
+	padding-top:10px;
+}
+/* 编辑页面底部按钮组样式 end****************************/
+
+/* 普通的input框 */
+input[type=text],input[type=password]{
+    color: #555;
+    font-weight: normal;
+    background-color: #fff;
+    padding: 0px 8px !important;
+    border: 1px solid #ccc;
+    margin: 0;
+    height: 36px;
+    border-radius: 2px !important;
+}
+
+input[type=file]{
+    height: 36px;
+}
+
+textarea{
+	border:1px #ccc solid;
+	border-radius: 2px !important;
+}
+
+/* 普通的input,select框获得焦点 */	
+input[type=text]:focus,input[type=password]:focus,select:focus,textarea:focus{
+	border-color: #2c63ff;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px
+		rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px
+		rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px
+		rgba(0, 0, 0, 0.1)
+}
+
+/* 只读样式 */
+input[readonly],select[readonly],textarea[readonly]{
+	 background-color: #eeefea !important;
+	 cursor: pointer !important;
+}
+/* 不可操作样式 */
+input[disabled],select[disabled],textarea[disabled]{
+	 background-color: #ccc !important;
+	 cursor: no-drop !important;
+	 border-color:#ccc !important;
+}
+
+
+select{
+	height: 36px;
+    border-radius: 0px !important;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    padding-left:5px;
+    border-radius: 2px !important;
+}
+
+
+
+
+
+/* checkbox && radio */
+input[type=checkbox],
+input[type=radio] {
+  margin:0px;
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  left: 6px;
+  top: 3px;
+  cursor: pointer;
+}
+
+/* 控制radio是圆的 */
+input[type=radio] + .lbl::before {
+  top: -2px;
+  position: relative;
+  margin-left: -18px;
+  margin-right: 0px;
+  cursor: pointer;
+  font-family: fontAwesome;
+  font-weight: normal;
+  font-size: 12px;
+  color: #FFF;
+  content: "\a0";
+  background-color: #FAFAFA;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 20px;
+  min-width: 20px;
+  line-height: 18px;
+}
+
+/* radio和checked默认选中的且不可点击的效果 */
+input[type=radio][disabled][checked] + .lbl::before,
+input[type=checkbox][disabled][checked] + .lbl::before{
+	 cursor: 85a0d8 !important;
+	 border-color: #bdc6d8 !important;
+}
+
+/* radio，checkbox不可操作样式 */
+input[type=radio][disabled] + .lbl::before{
+	 background-color: #ccc !important;
+	 cursor: no-drop !important;
+}
+input[type=checkbox][disabled] + .lbl::before{
+	 background-color: #ccc !important;
+	 cursor: no-drop !important;
+}
+
+/* 控制checkbox是方的 */
+input[type=checkbox] + .lbl::before {
+  top: -2px;
+  position: relative;
+  margin-left: -18px;
+  margin-right: 0px;
+  cursor: pointer;
+  font-family: fontAwesome;
+  font-weight: normal;
+  font-size: 12px;
+  color: #FFF;
+  content: "\a0";
+  background-color: #FAFAFA;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  display: inline-block;
+  text-align: center;
+  height: 18px;
+  min-width: 18px;
+}
+
+/* checkbox && radio 的悬浮色*/
+input[type=checkbox]:hover + .lbl::before,
+input[type=radio]:hover + .lbl::before,
+input[type=checkbox] + .lbl:hover::before,
+input[type=radio] + .lbl:hover::before {
+  border-color: #ff893c;
+}
+
+/* checkbox && radio 的焦点色*/
+input[type=checkbox]:focus + .lbl::before,
+input[type=radio]:focus + .lbl::before {
+  border-color: #f59942;
+}
+
+/* checkbox && radio 的活动色*/
+input[type=checkbox]:active + .lbl::before,
+input[type=radio]:active + .lbl::before,
+input[type=checkbox]:checked:active + .lbl::before,
+input[type=radio]:checked:active + .lbl::before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* radio 的选中选中样子*/
+input[type=radio]:checked + .lbl::before {
+  display: inline-block;
+  content: "\f111";
+  color: #2c63ff;
+  background-color: #fafafa;
+  border-color: #2c63ff;
+}
+
+/* checkbox 的选中样子*/
+input[type=checkbox]:checked + .lbl::before{
+  display: inline-block;
+  content: '\f00c';
+  color: #2c63ff;
+  background-color: #fafafa;
+  border-color: #2c63ff;
+}
+.input-checkbox,.input-radio{
+	float: left;
+	padding-right:10px;
+}
+
+
+/*文件选择框样式设置 start*/
+.a-upload {
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    display: inline-block;
+    padding:0 0 0 5px;
+    background-color: #fff;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.a-upload  input {
+	height:100%;
+	width:100%;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    left:0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    text-decoration: none;
+    border-color: #2c63ff;
+}
+/*文件选择框样式设置 end*/
+
+
+/*-----------------------系统主要按钮样式----------------------- */
+.btn-main{
+    color: #fff;
+    background-color: #2c63ff;
+    border-color: #2c63ff;
+}
+.btn-main:hover, .btn-main:focus{
+	color: #fff;
+	background-color: #134fff;
+	border-color: #1846c8;
+}
+
+button>i{
+	padding-right:3px;
+}
+
+
+.btn-height{
+	height:36px;
+    vertical-align:top;
+}
+
+
+
+/*-----------------------图标样式颜色设置---------------------- */
+.ico-main {
+    color: #2c63ff;
+}
+.ico-primary {
+    color: #428BCA;
+}
+.ico-info{
+	color: #5BC0DE;
+}
+.ico-success {
+    color: #5CB85C;
+}
+.ico-warning {
+    color: #F0AD4E;
+}
+.ico-danger {
+    color: #D9534F;
+}
+.ico-gray {
+    color: #808080;
+}
+
+
+
+/**字体大小*/
+.bigger-100 {
+  font-size: 100% !important;
+}
+.bigger-110 {
+  font-size: 110% !important;
+}
+.bigger-120 {
+  font-size: 120% !important;
+}
+.bigger-130 {
+  font-size: 130% !important;
+}
+.bigger-140 {
+  font-size: 140% !important;
+}
+.bigger-150 {
+  font-size: 150% !important;
+}
+.bigger-160 {
+  font-size: 160% !important;
+}
+.bigger-170 {
+  font-size: 170% !important;
+}
+.bigger-180 {
+  font-size: 180% !important;
+}
+.bigger-190 {
+  font-size: 190% !important;
+}
+.bigger-200 {
+  font-size: 200% !important;
+}
+.bigger-210 {
+  font-size: 210% !important;
+}
+.bigger-220 {
+  font-size: 220% !important;
+}
+.bigger-230 {
+  font-size: 230% !important;
+}
+.bigger-240 {
+  font-size: 240% !important;
+}
+.bigger-250 {
+  font-size: 250% !important;
+}
+.bigger-260 {
+  font-size: 260% !important;
+}
+.bigger-270 {
+  font-size: 270% !important;
+}
+.bigger-280 {
+  font-size: 280% !important;
+}
+.bigger-290 {
+  font-size: 290% !important;
+}
+.bigger-300 {
+  font-size: 300% !important;
+}
+
+
+
+/**外边距设置 */
+.no-margin {
+  margin: 0 !important;
+}
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+.no-margin-top {
+  margin-top: 0 !important;
+}
+.no-margin-left {
+  margin-left: 0 !important;
+}
+.no-margin-right {
+  margin-right: 0 !important;
+}
+
+.margin-10{
+	 margin: 10px !important;
+}
+
+.margin-top-10{
+	 margin-top: 10px !important;
+}
+.margin-top-15{
+	 margin-top: 15px !important;
+}
+.margin-top-20{
+	 margin-top: 20px !important;
+}
+.margin-top-25{
+	 margin-top: 25px !important;
+}
+
+.margin-left-10{
+	 margin-left: 10px !important;
+}
+.margin-left-15{
+	 margin-left: 15px !important;
+}
+.margin-left-20{
+	 margin-left: 20px !important;
+}
+.margin-left-25{
+	 margin-left: 25px !important;
+}
+
+
+/* Tab标签页样式  start****************************/
+.tabbable-custom {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	/* margin-top:10px; */
+	padding-top:10px;
+	height:100%;
+}
+.tabbable-custom>.nav-tabs {
+	margin-left:10px;
+	border:0;
+}
+
+.tabbable-custom>.nav-tabs>li {
+	border-top: 3px solid transparent;
+	border-bottom: 0;
+	float: left;
+	min-width:120px;
+	text-align:center;
+	border-radius: 0 !important;
+}
+
+.tabbable-custom>.nav-tabs>li {
+	border-top: 3px solid transparent;
+	border-bottom: 0;
+	float: left;
+	min-width:120px;
+	text-align:center;
+	border-radius: 0 !important;
+}
+
+
+.tabbable-custom>.nav-tabs>li>a {
+	border-radius: 0 !important;
+	margin:0px !important;
+	border-top:0 !important;
+	border-bottom:0 !important;
+	font-weight: bold !important;
+}
+
+.tabbable-custom>.nav-tabs>li.active {
+	border-top: 4px solid #2c63ff;
+}	
+
+.tabbable-custom>.nav-tabs>li.active > a {
+	box-shadow: 0px -2px 1px 0px #A4A4A4;
+}	
+	
+
+.tabbable-custom .tab-line{
+	border-top: 1px solid #D6D6D6;
+/* 	margin-left:-10px;
+	margin-right:-10px; */
+}
+
+.tabbable-custom .tab-content {
+	overflow:hidden !important;
+	background-color: #fff;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	overflow: auto;
+	margin-top: 0
+}
+
+.tabbable-custom .tab-content .tab-pane{
+	height:100%;
+}
+
+/* Tab标签页样式  end****************************/
+
+
+
+/* 其他扩展输入框样式 start****************************/
+/* input带图标的样式 */
+.input-group input{
+	position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    background-image: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+} 
+.input-group-addon {
+    padding: 5px 12px;
+    background-color: #fff;
+    border-radius: 0px;
+    height:24px !important;
+}
+
+/* input图标在左边 */
+.input-left-btn{
+	height:26px !important;
+	padding: 2px 12px;
+    border-radius: 0px;
+}
+.input-group-btn{
+	height:24px !important;
+}
+.input-group-btn + .form-control{
+	margin-left: -1px !important;
+}
+
+/* input图标在右边 */
+.input-right—btn{
+	height:36px !important;
+	padding: 2px 12px;
+    border-radius: 0px;
+    color: #333;
+    background-color: #fff;
+}
+/* input下拉箭头 */
+.caret{
+	padding-bottom: 3px;
+}
+.dropdown-menu .divider{
+	height:2px;
+}
+		
+/* 其他扩展输入框样式  end****************************/		
+		
+/* 设置bootstrap第一个选择框的高度问题 */		
+.fixed-table-container thead th .th-inner, .fixed-table-container tbody td .th-inner{
+	line-height: 18px !important;
+}
+
+/* 必填项的红色小星星样式 */
+.redStar{
+	color: #e82824;
+    font-size: 16px !important;
+    padding-right: 2px;
+}		
+
+
+
+/* 盒子容器列表 start*/
+
+.box_container {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding-left: 10px;
+	padding: 10px;
+}
+
+.table_box{
+	padding: 5px;
+}
+
+.content_box {
+	background-color: #fff;
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
+
+.info_box {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	min-height: 40px;
+	line-height: 40px;
+	text-align: left;
+	-o-transition: all 0.15s, 0.15s;
+	-moz-transition: all 0.15s, 0.15s;
+	-webkit-transition: all 0.15s, 0.15s;
+	padding-left: 15px;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+
+.bookmark {
+	font-size: 53px !important;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #999;
+}
+
+.bookmark-font {
+	color: white;
+	font-size: 12px !important;
+	position: absolute;
+	top: 0px;
+	right: 6px;
+}
+
+.bookmark.orange {
+	color: #f0ad4e;
+}
+
+.bookmark.green {
+	color: #5cb85c;
+}
+
+.img_box {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	width: 100px;
+}
+
+.info_box>ul {
+	float: left;
+	margin: 0px;
+	margin-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	list-style: none;
+}
+
+.info_box>ul>li {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 14px !important;
+	height: 26px;
+	line-height: 26px;
+}
+
+
+.info_box>ul>li>a{
+	color:#2c63ff;
+	font-size: 16px !important;
+	font-weight: bolder !important;
+}
+
+.info_box>ul>li>a:hover {
+	color:#2c63ff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+ 
+
+.btn_box {
+	width: 100%;
+	float: right;
+	text-align: right;
+}
+
+/* 盒子容器列表 end*/
+
+
+/* 列表备注说明信息*/
+.little-note{
+	font-size:14px !important;
+	color: #999C9F;
+	line-height: 18px !important;
+}
+
+
+
+/* 盒子容器列表 start*/
+.second_menu {
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+}
+
+.second_menu ul {
+	padding: 10px 0 0 0;
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	background-color: #f5f5f5;
+	color: #888;
+	margin: 0 auto;
+}
+
+.second_menu>ul>li {
+	min-width: 40px;
+	float: left;
+}
+
+.second_menu>ul>li:first-child {
+	margin-left: 25px;
+}
+
+.second_menu>ul>li a {
+	display: block;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px 4px 0 0;
+	color: #000;
+	font-size: 16px !important;
+	text-align: center;
+}
+
+.second_menu>ul>li a.active {
+	color: #2c63ff;
+	background-color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+.second_menu>ul>li a:hover {
+	color: #2c63ff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.third-menu {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	line-height: 50px;
+}
+
+.third-menu a {
+	color: #333;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+}
+
+.third-menu a:FIRST-CHILD {
+	margin-left:200px;
+}
+
+.third-menu a.active {
+	border-bottom: 3px solid #ff0000;
+	color: #ff0000;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+ .third-menu a:hover{
+	color: #ff0000;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 3px solid #ff0000;
+}
+
+/* 盒子容器列表 end*/
+
+.label-div label{
+	cursor: pointer;
+    margin-bottom: 15px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    padding: 4px 6px;
+    margin-bottom: 10px;
+}
+label.label-primary{
+	background-color: #428bca !important;
+}
+
+.label-div label:hover{
+	 background-color: #ddd;
+}
+

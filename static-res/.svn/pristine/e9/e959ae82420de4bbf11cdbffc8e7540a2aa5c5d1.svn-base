@@ -1,0 +1,167 @@
+
+/***table整体的背景颜色***/
+.datagrid-view2{
+	background: #fefefe;
+}
+/***table宽度的调整***/
+/* .datagrid-view,.datagrid-view2, */
+/* .datagrid-view2 .datagrid-htable, */
+/* .datagrid-header, */
+/* .datagrid-header-inner, */
+/* .datagrid-body, */
+/* .datagrid-btable{ */
+/* 	width:100% !important; */
+/* } */
+
+
+
+
+.datagrid-header td:last-child, .datagrid-body td:last-child{
+	border-right:none;
+}
+/**查询条件右侧按钮**/
+.search-table{
+	position: relative;
+    overflow: hidden;
+    zoom: 1;
+    padding: 10px;
+    padding-right: 175px;
+}
+.search-table tr{
+	height: 36px;
+}
+.search-button{
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+/**表格头部样式重置**/
+.datagrid-header{
+	border:none;
+	background: none;
+	height: auto !important;
+}
+.datagrid-header-row{
+	background: #f4f7fc;
+	filter: none;
+	height: 32px;
+}
+/**表格头部图标**/
+.datagrid .panel-title:before{content:'\f0ca'; }
+/**表格头部字体大小**/
+.datagrid-cell-group,
+.datagrid-header-rownumber,
+.datagrid-header .datagrid-cell span{
+	font-size: 14px;
+}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{
+	line-height: normal!important;
+	padding:4px  6px;
+}
+/**表格数据样式重置**/
+.datagrid-row{height: 32px;}
+.datagrid-row *{
+    font-size: 13px;
+    /* color: #555;
+    font-family: "宋体"; */
+    word-break: keep-all;  /**超出表格部分文字省略**/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/**表格数据左侧复选框**/
+.datagrid-row td input[type=checkbox]{
+	margin-top: 4px;
+}
+/**easy ui左侧复选框样式重置**/
+/* .datagrid-header-check, .datagrid-cell-check {width: 100%;} */
+.datagrid-row .datagrid-cell-check input[type=checkbox]{margin-top: 1px;}
+
+
+/**表格虚线改为实线**/
+.datagrid-header td, .datagrid-body td, .datagrid-footer td{
+	border-style:solid;
+    border-color: #d9d9d9;
+}
+
+
+/**表格最后一行去掉线框**/
+.datagrid-body tr:last-child td{border-bottom:none;}
+
+/***表格数据背景颜色****/
+.datagrid-htable, .datagrid-btable, .datagrid-ftable{
+	background: #fefefe;
+}
+
+/**选中行的效果**/
+.datagrid-row-selected{
+	background: #fce9be;
+}
+/**表格底部页码样式**/
+.datagrid .datagrid-pager{
+	background: #fefefe;
+}
+
+/**表格下方按钮**/
+.table-btn-bottom{
+	padding: 10px 0;
+	background: url(../images/btn-line.png) left bottom no-repeat;
+}
+/*******表格内容部分*********/
+/* .datagrid-btable{
+	width:100%;
+} */
+
+.special-list-right .datagrid-btable tr:last-child td{
+	border-bottom:1px solid #d9d9d9;
+}
+.special-list-left{
+	position: relative;
+}
+.special-list-left .search-input{
+	position:absolute;
+	right:5px;
+	top:5px;
+	z-index: 1;
+}
+.special-list-left .datagrid-btable tr:last-child td{
+	border-bottom:1px solid #d9d9d9;
+}
+.search-input input + .linkicon,
+.search-input .linkicon:hover,
+.search-input .linkbutton:hover{
+	background: none;
+	border:none;
+}
+.search-input .linkicon:hover *,.search-input .linkbutton:hover *{
+	color: #317bde;
+}
+
+/**********重置自定义带线框的表格************/
+.reset-border-table{table-layout: fixed;}  /***必须，表格宽度不随文字增多而变长。****/
+.reset-border-table tr{	height:32px;}
+.reset-border-table thead tr{background: #f4f7fc;}
+.reset-border-table thead th{
+	font-weight:normal;
+}
+.reset-border-table thead th:first-child,
+.reset-border-table tr td:first-child{
+	border-left:none;
+}
+.reset-border-table thead th,
+.reset-border-table tbody td{
+	border-left:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+	padding:0 5px;
+}
+.reset-border-table tr th,
+.reset-border-table tr td{
+	overflow:hidden;
+	word-break: keep-all;  /**超出表格部分文字省略**/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.reset-border-table tr:last-child td{
+	border-bottom:none;
+}
+
+

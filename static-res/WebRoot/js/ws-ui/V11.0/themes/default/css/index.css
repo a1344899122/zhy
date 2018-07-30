@@ -1,0 +1,280 @@
+
+.wrap{border-top: 1px solid #196fbd;}
+#ws_easyui_layout2{	
+	padding: 0 !important; 
+	padding-right: 0 !important;
+	width:100% !important;
+    height: 100% !important;
+}
+.layout-split-west{border-right:none;}
+
+#ctrlTools .mCustomScrollBox {
+    height:100% !important;
+}
+.red{
+	color:#fc8281;
+	font-weight:normal;
+}
+/****连接按钮*****/
+.btn-link {
+    background: none;
+    border: none;
+    color: #2068c7;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    cursor: pointer;
+}
+.btn-link:hover{text-decoration: underline;}
+/**************首页代码 start ***************/
+.home-container{
+	padding:3px;    
+	overflow: hidden;
+    zoom: 1;
+}
+.home-main{
+	padding:10px 15px;
+	box-sizing:border-box;
+	border:1px solid #d9d9d9;
+	background:#fff;
+    position: relative;
+    margin-bottom:8px;
+}
+.home-main .title-icon{
+    position: absolute;
+    left:-1px;
+    top:12px;
+    width:4px;
+    height:24px;
+    display:block;
+    background:#ffc000;
+}
+.home-main .title-more{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.home-main .home-title{
+	font-size:14px;
+    padding-top: 5px;
+	padding-bottom:10px;
+	border-bottom:1px solid #d9d9d9;
+}
+.home-commonModular{width:100%;}
+/****常用功能***/
+.commonModular{
+	width:100%;
+	padding-top:12px;
+	box-sizing:border-box;
+	overflow: hidden;
+    zoom: 1;
+}
+.commonModular li{
+	float:left;
+	width:110px;
+	box-sizing:border-box;
+    position: relative;
+    padding-top: 65px;
+    text-align: center;
+}
+@media screen and (min-width:1400px) {
+    .commonModular li{width:130px;}
+}
+.commonModular li a{
+	width:65px;
+	height:65px;
+	background:#70dceb;
+	border-radius:10px;
+	display:block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -32px;
+}
+.commonModular li a:hover{
+	opacity:.6;
+}
+.commonModular li a img{margin-top: 12.5px;}
+.commonModular li:nth-child(even) a{background:#a0a7e6;}
+/******常用功能滚动条*******/
+#myscroll {
+	display: block;
+	width: 100%;
+	box-sizing:border-box;
+	position: relative;
+	height: 105px;
+	overflow: hidden;
+}
+#myscroll #myscrollbox {
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1000000px;
+}
+/*****左右切换按钮*****/
+#mybtns {
+	display: block;
+	height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+#mybtns a {
+	width: 20px;
+    height: 20px;
+    display: block;
+    float: right;
+    margin-left: 5px;
+    text-align: center;
+}
+#mybtns a i{
+    font-size: 20px;
+}
+#mybtns a:hover {
+	background-color: #0e59bf;
+}
+#mybtns a:hover i{
+	color: #fff;
+}
+#mybtns a:hover, #myscroll, #mybtns a, #myscroll #myscrollbox {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+
+/***待办任务   待签任务   未读消息***/
+.home-pendingTask,.home-consultation{
+	width:50%;
+	float:left;
+	box-sizing:border-box;
+}
+.home-pendingTask{padding-right:8px;}
+.home-pendingTask .title-icon{background:#fc8281;}
+/****徽章****/
+span.badge {
+    padding: 2px 9px;
+    background: #7f7f7f;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 3px;
+}
+/*****tab 切换****/
+.home-main #index_myTabs{
+	overflow: hidden;
+	zoom: 1;
+    border-bottom: 1px solid #d9d9d9;
+}
+.home-main #index_myTabs li{
+   float: left; 
+   margin-right:30px;
+   padding-top: 5px;
+   padding-bottom: 10px;
+}
+.home-main #index_myTabs li a{color:#333;}
+.home-main #index_myTabs .active a{color:#2068c7;}
+.home-main #index_myTabs .active span.badge{background:#fc8281;}
+.home-main #index_myTabContent ul{display: none;}
+.home-main #index_myTabContent .show{display: block;}
+.home-main #index_myTabContent{padding:10px 0;}
+.home-main #index_myTabContent ul li{
+	padding:8px 0;
+	background:url(../images/home-listIcon.png) left center no-repeat;
+    padding-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 80px;
+    position: relative;
+} 
+.home-main #index_myTabContent ul.pendingTask li,
+.home-main #index_myTabContent ul.signingTask li{
+    padding-right:0;
+} 
+.home-main #index_myTabContent ul li a{color:#666;}
+.home-main #index_myTabContent ul li:hover a{color:#2068c7;text-decoration: underline;}
+.home-main #index_myTabContent .btn-link{margin-left:15px;padding: 0;}
+.home-main #index_myTabContent ul li .listDate{
+    color: #aaa;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+}
+/**  征求意见   最新标准   企业标准公开   企业标准领跑者  **/
+.home-consultation .title-icon{background:#8de418;}
+
+
+/***标准库统计***/
+.home-standardLibrary,.home-standardRevision{
+	width:50%;
+	float:left;
+	box-sizing:border-box;
+}
+.home-standardLibrary{padding-right:8px;}
+.home-standardLibrary .title-icon{background:#00c2ff;}
+
+/***标准制修订统计***/
+.home-standardRevision .title-icon{background:#a0a7e6;}
+
+/*****其他相关系统****/
+.otherSystems{
+	width:100%;
+	clear: both;
+	padding: 12px 5px;
+	text-align:center;
+}
+.otherSystems a{
+	color:#666;
+	padding:0 7px;
+	border-right:1px solid #aaa;
+}
+.otherSystems a:hover{color:#2068c7;text-decoration: underline;}
+.otherSystems a:last-child{border-right:none;}
+@media screen and (max-width:1300px) {
+    .otherSystems a{font-size:12px;}
+}
+/**************首页代码 end ***************/
+
+
+/*********欢迎页样式2 start ************/
+.home2-container{
+	width:800px;
+	margin:0 auto;
+	margin-top:10%;
+	text-align:center;
+}
+.home2-container p{
+    font-size: 24px;
+    margin-top: 8px;
+}
+/*********欢迎页样式2 end ************/
+
+
+/*********欢迎页样式3 start ************/
+.home3-container{
+	width:1000px;
+	margin-top:60px;
+	margin-left:100px;
+	position: relative;
+    padding-left: 150px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.home3-container img{
+	position: absolute;
+    left: 0;
+    top: 0;
+	margin-right:30px;
+}
+.home3-container h3{font-size: 32px;}
+.home3-container p{
+    font-size: 18px;
+    color:#666;
+    margin-top: 8px;
+}
+/*********欢迎页样式3 end ************/
+
+
+

@@ -1,0 +1,353 @@
+@CHARSET "UTF-8";
+
+* {
+	outline: none !important;
+}
+
+body, html {
+	/* overflow-x: auto !important;
+	overflow-y: hidden !important; */
+	width: 100%;
+	height: 100%;
+}
+
+/* 整体框架 */
+.primary-bgcolor .main-content {
+	height: 100%;
+}
+
+.navigation_bar {
+	background-color: rgba(0, 45, 92, 1);
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	padding-left: 15px;
+}
+
+.navigation_bar:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	width: 100%;
+	height: 7px;
+	background: url(../img/00.png) repeat-x 0 0;
+	background-size: 2px 7px;
+	z-index: 1000;
+}
+
+.logo-header {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	font-size: 26px !important;
+	float: left;
+}
+
+.logo-header a {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navigation_bar ul {
+	background-color: rgba(0, 45, 92, 1);
+	float: left;
+	list-style: none;
+	height: 60px;
+	position: relative;
+	right: 0px;
+	margin-bottom: 0px;
+}
+
+.navigation_bar ul.right {
+	float: right;
+}
+
+.navigation_bar ul li {
+	display: block;
+	float: left;
+}
+
+.navigation_bar ul li a {
+	color: #fff;
+	display: block;
+	min-width: 60px;
+	padding: 0px 18px 0 18px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navigation_bar ul li a:hover, .navigation_bar ul li.active {
+	background-color: #1846c8 !important;
+}
+
+/* 左侧菜单 */
+.primary-bgcolor .main-content .left-content {
+	height: 100%;
+	float: left;
+	position: absolute;
+	z-index: 300;
+	width: 240px;
+}
+/* 向左的折叠按钮 */
+.primary-bgcolor .main-content .left-content .fold-left {
+	text-align: right;
+	right: 0;
+	position: absolute;
+	top: 50%;
+	z-index: 900;
+	height: 51px;
+	width: 16px;
+	cursor: pointer;
+}
+/* 向右的折叠按钮 */
+.primary-bgcolor .main-content .left-content .fold-right {
+	position: absolute;
+	text-align: right;
+	right: -16px;
+	top: 50%;
+	z-index: 900;
+	height: 51px;
+	width: 16px;
+	cursor: pointer;
+	display: none;
+}
+
+.primary-bgcolor .main-content .left-content img {
+	width: 100%;
+	height: 100%;
+}
+/* 左侧菜单拖动条 */
+.primary-bgcolor .main-content .left-content .resizeable {
+	top: 0px;
+	left: 239px;
+	position: absolute;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
+	cursor: e-resize;
+	z-index: 2;
+}
+
+/* 左侧菜单主题色 */
+
+/* 左侧菜单背景色 */
+.primary-bgcolor .main-content .left-content .sidebar {
+	background-color: #fafafa;
+	height: 100%;
+	overflow: auto;
+}
+
+/* 左侧一级菜单所有a标签 */
+.primary-bgcolor .main-content .left-content  .sidebar  ul>li a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 1px solid #dce3ed; /* 新增样式  */
+	font-size: 14px !important;
+}
+
+/* 左侧一级菜单a标签*/
+.primary-bgcolor .main-content .left-content .sidebar  ul>li>a {
+	color: #333;
+	padding-left: 25px;
+}
+
+/* 左侧菜单li鼠标悬浮状态 */
+.primary-bgcolor .main-content .left-content  .sidebar ul>li {
+	cursor: pointer
+}
+/* 左侧菜单li鼠标悬浮状态 */
+.primary-bgcolor .main-content .left-content .nav>li>a:hover, .nav>li>a:focus
+	{
+	background-color: #d1daed;
+	color: #fff;
+}
+
+/* 左侧一级菜单小尖角 */
+.primary-bgcolor .main-content .left-content .sidebar ul>li>a>.fa-caret-right,
+	.primary-bgcolor .main-content .left-content .sidebar ul>li>a>.fa-caret-down
+	{
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	z-index: 100;
+}
+
+/* 左侧二级菜单小尖角 */
+.primary-bgcolor .main-content .left-content .sidebar ul>li>ul>li>a>.fa-caret-right,
+	.primary-bgcolor .main-content .left-content .sidebar ul>li>ul>li>a>.fa-caret-down
+	{
+	position: absolute;
+	top: 12px;
+	left: 30px;
+	z-index: 100;
+}
+
+/* 左侧菜单活动 */
+.primary-bgcolor .main-content .left-content  .sidebar ul>li  .actived {
+	background: #2c63ff !important;
+	color: white !important;
+	z-index: 3; /* 拖动条的z-index是2，目的是覆盖拖动条的z-index */
+}
+
+/* 左侧二级菜单a */
+.primary-bgcolor .main-content .left-content .sidebar  ul>li>ul>li>a {
+	padding-left: 40px;
+	border-bottom: 1px solid #eee; /* 新增样式  */
+}
+/* 左侧三级菜单a */
+.primary-bgcolor .main-content .left-content  .sidebar ul>li>ul>li>ul>li>a
+	{
+	padding-left: 55px;
+	border: none;
+}
+/* 左侧三级菜单a里面的图标 */
+.primary-bgcolor .main-content .left-content .sidebar ul>li>ul>li>ul>li>a i
+	{
+	color: #fff;
+	margin-top: 3px;
+}
+
+/* 一级ul */
+.primary-bgcolor .main-content .left-content .sidebar ul {
+	background: #f4f6fa;
+}
+/* 二级ul */
+.primary-bgcolor .main-content .left-content .sidebar li>ul {
+	background-color: gainsboro;
+	background: #fafafa; /* 新增样式  */
+}
+
+/* 三级ul */
+.primary-bgcolor .main-content .left-content .sidebar li>ul>li>ul {
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5; /* 新增样式  */
+}
+
+/* 工作区域默认选中色 */
+.primary-bgcolor .main-content .left-content .sidebar  ul>li>#workArea {
+	background-color: #fafafa !important;
+	text-align: center;
+	height: 170px;
+	z-index: 1;
+	cursor: auto;
+	padding: 9px 25px;
+}
+
+/* 工作区域默认悬浮色 */
+.primary-bgcolor .main-content .left-content .sidebar ul>li>#workArea:hover
+	{
+	height: 170px;
+	background-color: #d1daed !important;
+	color: black !important;
+}
+
+/* 右侧内容 */
+.primary-bgcolor .main-content .right-content {
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #fff;
+	overflow: auto;
+	float: right;
+	padding-right: 0px;
+	padding-left: 0px;
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+/* 盒子容器列表 start*/
+.second_menu {
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+}
+
+.second_menu ul {
+	padding: 10px 0 0 0;
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	background-color: #f5f5f5;
+	color: #888;
+	margin: 0 auto;
+}
+
+.second_menu>ul>li {
+	min-width: 40px;
+	float: left;
+}
+
+.second_menu>ul>li:first-child {
+	margin-left: 20px;
+}
+
+.second_menu>ul>li a {
+	display: block;
+	/* min-width: 130px; */
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px 4px 0 0;
+	color: #000;
+	font-size: 16px !important;
+	text-align: center;
+	/* padding-left: 20px;
+	padding-right: 20px; */
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.second_menu>ul>li a.active {
+	color: #2c63ff;
+	background-color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+	/* border-top: 2px solid #2c63ff; */
+}
+
+.second_menu>ul>li a:hover {
+	color: #2c63ff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.third-menu {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	line-height: 50px;
+}
+
+.third-menu a {
+	color: #333;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+}
+
+.third-menu a:FIRST-CHILD {
+	margin-left:200px;
+}
+
+.third-menu a.active {
+	border-bottom: 3px solid #ff0000;
+	color: #ff0000;
+	cursor: pointer;
+	font-weight: 600;
+}
+
+ .third-menu a:hover{
+	color: #ff0000;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 3px solid #ff0000;
+}
+
+/* 盒子容器列表 end*/

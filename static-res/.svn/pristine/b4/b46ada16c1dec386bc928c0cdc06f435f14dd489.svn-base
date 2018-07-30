@@ -1,0 +1,118 @@
+
+*{ 
+	font-family: "Microsoft YaHei"; 
+	zoom:1; 
+	margin: 0;
+	padding: 0; 
+	color: #444;
+	font-size: 14px;
+	outline: none!important;
+}
+/**外边距设置 */
+.no-margin { margin: 0 !important;}
+.no-margin-bottom { margin-bottom: 0 !important;}
+.no-margin-top { margin-top: 0 !important;}
+.no-margin-left { margin-left: 0 !important;}
+.no-margin-right { margin-right: 0 !important;}
+
+
+/**内边距设置 */
+.no-padding { padding: 0 !important;}
+.no-padding-bottom { padding-bottom: 0 !important;}
+.no-padding-top { padding-top: 0 !important;}
+.no-padding-left { padding-left: 0 !important;}
+.no-padding-right { padding-right: 0 !important;}
+
+
+/**相对定义和绝对定位*/
+.position-relative { position: relative;}
+.position-absolute { position: absolute;}
+
+
+/**浮动设置*/
+.no-float { float: none !important;}
+.float-left { float: left !important;}
+.float-right { float: right !important;}
+
+
+
+/**align 属性规定 div 元素中的内容的水平对齐方式 */
+.align-left {text-align: left !important;}
+.align-center {text-align: center;margin: 0 auto}
+.align-right {text-align: right}
+
+
+/**字体       normal	默认值。定义标准的字符。bold	定义粗体字符。bolder	定义更粗的字符。lighter	定义更细的字符。inherit	规定应该从父元素继承字体的粗细。*/
+.normal{ font-weight: normal;}
+.bold{ font-weight: bold;}
+
+/**边框线设置*/
+.no-border { border-width: 0 !important;}
+.no-border-bottom { border-bottom-width: 0 !important;}
+.no-border-top { border-top-width: 0 !important;}
+.no-border-left { border-left-width: 0 !important;}
+.no-border-right { border-right-width: 0 !important;}
+
+
+
+.white{color: #fff;}
+.light-grey{color: #999;}
+.red{color: #f90404;}
+.green{color: #43ae75;}
+.blue{color: #195fbd;}
+
+a{
+	color:#0e59bf;
+	text-decoration:none;
+}
+html,body,.easyui-layout{height: 100%;}
+ul,ol,dl{ list-style:none;}
+h1,h2,h3{ font-weight:normal;}
+img{border:0;}
+i{ font-style:normal;}
+*:focus { outline:none; }
+.display-none{display: none;}
+.display-inline{display: inline-block;}
+.display-block{display:block;}
+.jianxi{width: 100%;height:3px;}
+.jianxi-5{width: 100%;height:5px;}
+.jianxi-10{width: 100%;height:10px;}
+.jianxi-15{width: 100%;height:15px;}
+.jianxi-20{width: 100%;height:20px;}
+.jianxi-25{width: 100%;height:25px;}
+.jianxi-30{width: 100%;height:30px;}
+
+#ws_easyui_layout{
+    width: 100%;
+    height:100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.height-summary{max-height:193px;}
+
+
+/*********关联表单页面*********/
+.link-container{
+	border:1px solid #d9d9d9;
+	padding:6px 10px;
+}
+.link-container p{line-height:30px;}
+.link-container p.no-link{line-height:20px;}
+.link-container p a {color: #444;}
+.link-container p a:hover {color: #0e59bf;}
+.link-container p i{
+	color: #0e59bf;
+	margin-right:5px;
+}
+.link-container p span.badge{
+    padding: 2px 5px 4px 5px;
+    margin-left:5px;
+    color: #777;
+    font-size: 12px;
+    border: 1px solid #e6e6e6;
+    background: #fafafa;
+}
+.link-container p span.badge i{color: #777;}
+

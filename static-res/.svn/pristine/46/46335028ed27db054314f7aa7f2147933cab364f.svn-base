@@ -1,0 +1,16 @@
+[ 
+	{"name":"name","nameCn":"姓名","required":true,"validateType":"12","minValue":"2","maxValue":"15","tips":""},
+	{"name":"accounts","nameCn":"账号","required":true,"validateType":"16","minValue":"2","maxValue":"15","tips":""},
+	{"name":"password","nameCn":"密码","required":true,"validateType":"15","minValue":"2","maxValue":"15","tips":""},
+	{"name":"sex","nameCn":"性别","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"birthday","nameCn":"出生日期","required":true,"validateType":"30","minValue":"1900-01-01","maxValue":"2019-01-01","tips":""},
+	{"name":"like","nameCn":"爱好","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"mingzu","nameCn":"民族","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"work","nameCn":"工作单位","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"lianxi","nameCn":"联系地址","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"jianli","nameCn":"简历","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""},
+	{"name":"note","nameCn":"备注","required":true,"validateType":"10","minValue":"2","maxValue":"15","tips":""}
+	 
+]
+
+

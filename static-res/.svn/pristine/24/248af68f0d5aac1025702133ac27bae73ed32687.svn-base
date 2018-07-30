@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+.saveTable{
+	border:0px;
+	width:100%;
+	margin-bottom:10px;
+	overflow-y:hidden;
+	overflow-x:auto;
+	background-color: #fff;
+}
+
+.saveTable thead>tr>th{
+	font-weight: bold !important;
+    text-align: center !important;
+	color: #fff;
+    background-color: #395A9D !important;
+    border-top:1px #395A9D solid !important;
+	border-bottom:1px #395A9D solid !important;
+	vertical-align: middle !important;
+}
+
+.saveTable tr>td{
+	vertical-align: middle !important;
+}
+
+.saveTable thead>tr>th:first-child{
+   border-left-width:1px !important;
+   border-left-color:#395A9D !important;
+   border-left-style:soild !important;
+}
+
+.saveTable thead>tr>th:last-child{
+   border-right-width:1px !important;
+   border-right-color:#395A9D !important;
+   border-right-style:soild !important;
+}
+
+.saveTable .table-solid-line th{
+	border:1px #395A9D solid !important;
+}
+.saveTable .table-solid-line tr{
+	 border:1px #DDDDDD solid !important;
+}
+
+.saveTable .table-dashed-line{
+	border-bottom:1px #d7d7d7 solid !important;
+	border-right:1px #d7d7d7 solid !important;
+	border-top:1px #d7d7d7 solid !important;
+	border-left:1px #d7d7d7 solid !important;
+}
+
+.saveTable .table-dashed-line th{
+	border:1px #395A9D solid !important;
+}
+
+.saveTable .table-dashed-line td{
+	border-top:1px #d7d7d7 dashed !important;
+}
+
+.saveTable .table-no-bordered td{
+	border:0px !important;
+}
+
+
+/* 没有表头的table，且table没有边框线，里面的线条是实线 */
+.table.table-no-borderLine-solid > tbody  tr:first-child{
+	border-top: 0px solid #ddd !important;
+}
+
+.table.table-no-borderLine-solid > tbody  tr td{
+	border: 0px !important;
+	border-right: 1px solid #ddd !important;
+	margin: 0px !important;
+}
+
+.table.table-no-borderLine-solid > tbody  tr >td:last-child{
+	border-right: 0px solid #ddd !important;
+
+}
+
+.table.table-no-borderLine-solid > tbody  tr{
+	border-top: 1px solid #ddd !important;
+}
+
+.table.table-no-borderLine-solid{
+	margin:0px !important;
+}
+
+/* 没有表头的table，且table没有边框线，里面的线条是虚线 */
+ .table.table-no-borderLine-dashed > tbody  tr:first-child{
+	border-top: 0px dashed #ddd !important;
+ }
+
+.table.table-no-borderLine-dashed > tbody  tr td{
+	border: 0px !important;
+	border-right: 1px dashed #ddd !important;
+	margin: 0px !important;
+}
+
+.table.table-no-borderLine-dashed > tbody  tr >td:last-child{
+	border-right: 0px dashed #ddd !important;
+}
+
+.table.table-no-borderLine-dashed > tbody  tr{
+	border-top: 1px dashed #ddd !important;
+}
+
+.table.table-no-borderLine-dashed{
+	margin:0px !important;
+}
+		

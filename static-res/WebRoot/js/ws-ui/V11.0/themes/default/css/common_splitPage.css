@@ -1,0 +1,26 @@
+
+
+
+.splitPage{
+	float:right;
+	margin-top:-3px;
+	margin-right:-3px;
+}
+
+.splitPage td{
+	height:14px;
+	vertical-align:middle;
+	font-size:12px;
+	color:#333333;
+	letter-spacing:2px;
+}
+
+.forwardNum{
+	width:20px;
+	height:12px;
+	line-height:12px;
+	margin-top:-1px;
+	background:#FFF;
+	vertical-align:middle;
+}
+
